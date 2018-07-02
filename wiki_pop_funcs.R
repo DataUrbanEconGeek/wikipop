@@ -45,12 +45,12 @@ wiki_link_chkr <- function(x, area_name){
         return(link)
 }
 
-path_ckr <- function(wikihtml, path){
-        class(try(html_nodes(wikihtml, xpath = path),silent=TRUE))[1]
+node_ckr <- function(wikihtml, path){
+        class(try(html_nodes(wikihtml, css = path),silent=TRUE))[1]
 }
 
-wiki_path_ckr <- function(wikihtml, path){
-        if(path_ckr(wikihtml, path)=="try-error"){
+wiki_node_ckr <- function(wikihtml, path){
+        if(node_ckr(wikihtml, path)=="try-error"){
                 try(stop(simpleError("wrong table number"))) 
         } else {
                 for_table <- html_nodes(wikihtml, css = path)
@@ -69,7 +69,7 @@ area_populations <- function(area_name, state, type = "county"){
         if(class(wikihtml)[1] == "try-error"){
                 try(stop(""))
         } else {
-                population <- wiki_path_ckr(wikihtml, path) %>%
+                population <- wiki_node_ckr(wikihtml, path) %>%
                         html_table()
                 if(length(population[[1]]) == 3){
                         df <- cbind(population[[1]][1], population[[1]][2], 
