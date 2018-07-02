@@ -1,5 +1,5 @@
 Package: wikipop
-Title: What the Package Does (one line, title case)
+Title: Scrape Population data from Wikipedia
 Version: 0.0.0.9000
 Authors@R: person("Andrew", "Rosa", email = "andrew.a.rosa@gmail.com", role = c("aut", "cre"))
 Description: Tools to easily scrape population data from wikipedia for r.
