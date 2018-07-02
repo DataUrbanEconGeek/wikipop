@@ -1,7 +1,6 @@
 #' A function to scrape the list of villages displayed on wikipedia page for a 
 #' county. 
 
-
 village_grabber <- function(county, state){
         tag <- "div.column-count-4~ .column-count-2"
         state_fixed <- state_fxr(state)
