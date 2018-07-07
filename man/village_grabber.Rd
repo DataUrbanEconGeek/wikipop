@@ -2,12 +2,12 @@
 % Please edit documentation in R/village_grabber.R
 \name{village_grabber}
 \alias{village_grabber}
-\title{A function to scrape the list of villages displayed on wikipedia page for a 
+\title{A function to scrape the list of villages displayed on wikipedia page for a
 county.}
 \usage{
 village_grabber(county, state)
 }
 \description{
-A function to scrape the list of villages displayed on wikipedia page for a 
+A function to scrape the list of villages displayed on wikipedia page for a
 county.
 }

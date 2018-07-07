@@ -1,6 +1,6 @@
 #' A function to check css node
-
+#' @export node_ckr
 
 node_ckr <- function(wikihtml, path){
-        class(try(html_nodes(wikihtml, css = path),silent=TRUE))[1]
+        class(try(rvest::html_nodes(wikihtml, css = path),silent=TRUE))[1]
 }

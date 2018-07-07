@@ -11,3 +11,13 @@ RoxygenNote: 6.0.1.9000
 imports:
         dplyr,
         rvest
+Collate: 
+    'node_ckr.R'
+    'wiki_node_ckr.R'
+    'state_fxr.R'
+    'wiki_link_comp.R'
+    'html_chkr.R'
+    'wiki_link_chkr.R'
+    'area_populations.R'
+    'towns_grabber.R'
+    'village_grabber.R'
