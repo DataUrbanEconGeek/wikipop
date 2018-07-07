@@ -2,10 +2,16 @@
 % Please edit documentation in R/state_fxr.R
 \name{state_fxr}
 \alias{state_fxr}
-\title{A function to fix the state's name for wikipedia link}
+\title{Prepare state's name for wikipedia link}
 \usage{
 state_fxr(x)
 }
+\arguments{
+\item{x}{A character string of a state's name}
+}
 \description{
-A function to fix the state's name for wikipedia link
+Prepare state's name for wikipedia link
+}
+\examples{
+state_fxr("New York")
 }
