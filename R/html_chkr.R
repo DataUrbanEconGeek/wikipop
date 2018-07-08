@@ -1,6 +1,6 @@
 #' A function to check link
-#' @export html_chkr
-
+#' @import rvest
+#' @export
 html_chkr <- function(x){
-        class(try(rvest::read_html(x), silent=TRUE))[1]
+        class(try(read_html(x), silent=TRUE))[1]
 }

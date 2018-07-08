@@ -1,7 +1,6 @@
 #' A function to to make the components of a wikipedia link
 #' @include state_fxr.R
-#' @export wiki_link_comp
-
+#' @export
 wiki_link_comp <- function(type, state){
         types <- c("_County", "_(town)", "_(village)", "")
         state_fix <- state_fxr(state)

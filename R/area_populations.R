@@ -1,8 +1,8 @@
 #' A function to scrape the historic population data from wikipedia.
 #' The function returns a dataframe.
 #' @include wiki_link_chkr.R wiki_link_comp.R wiki_node_ckr.R
-#' @export area_populations
-
+#' @import rvest
+#' @export
 area_populations <- function(area_name, state, type = "county"){
         wiki_link_text <- try(wiki_link_comp(type = type, state))
 
